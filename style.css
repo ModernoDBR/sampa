@@ -350,6 +350,9 @@ main{
      .resultbox{
         width: 40%;
     }
+     .search{
+        width: 90%;
+    }
 }
 @media (max-width: 500px) {
     .title{
@@ -381,4 +384,8 @@ main{
       .resultbox{
         width: 80%;
     }
+      .search{
+        width: 80%;
+    }
 }
+
