@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+body
+{
+    background-color: #212125;
+}
+.Bandeira
+{
+    border-radius: 15px;
+    margin: auto;
+    height: 83px;
+    margin-left: 20px;
+    margin-right: 20px;
+    filter: brightness(0.85);
+    transition: all 0.5s linear;
+}
+.Bandeira:hover{
+    filter: brightness(1);
+  box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+header{
+    background-color: #294292;
+    height: 180px;
+    display: flex;
+    color: white;
+    width: 100%;
+}
+.title{
+    font-weight: bold;
+    color: white;
+    margin: auto;
+    font-size: 65px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    filter: brightness(0.85);
+    transition: all 0.2s linear;
+    cursor: default;
+  
+}
+.search{
+   --padding:18px;
+
+
+    margin: auto;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding); 
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: all 0.25s;
+}
+.search:focus-within{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+  background: #f3f3f3;
+}
+.search-input{
+    font-size: 16px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #333333;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+}
+.search-input::placeholder, 
+.search-icon{
+    color: rgba(0, 0, 0, 0.5);
+}
+p{
+    cursor: default;
+    font-size: 20px;
+    font-family: 'Lexend Deca' sans-serif;
+}
+.text{
+    cursor: default;
+    font-size: 20px;
+    font-family: 'Lexend Deca';
+    font-weight: 350;
+}
+.title:hover{
+    filter: brightness(1);
+      box-shadow:20px 20px 20px 20px rgba(0, 0, 0, 0.3);
+}
+.container{
+    transition: all 0.2s linear;
+}
+.container:hover{
+      box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+main{
+    display: grid;
+}
+.place{
+    margin: auto;
+    margin-top: 30px;
+    color: black;
+    height: auto;
+    width: 40%;
+}
+.more{
+    margin: auto;
+    margin-top: 30px;
+    color: black;
+    height: auto;
+    width: 40%;
+}
+.local{
+    font-size: 30px;
+    
+
+}
+.imagens{
+    display: flex;
+}
+.img{
+    margin: auto;
+    border-radius: 15px;
+    height: 200px;
+    width: 240px;
+    transition: all 0.3s linear;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+#map{
+    margin: auto;
+    border-radius: 14px;
+    transition: all 0.3s linear;
+    border: solid 5px;
+     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+#map:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.8);
+}
+.map{
+    display: flex;
+}
+.img:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+    border: 5px solid black;
+    filter: brightness(1.1);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.img:active{
+    transform: scale(2);
+}
+.btn{
+    margin-top: 20px;
+    font-size: 50px;
+    text-decoration: none;
+
+}
+.btn:hover{
+    text-decoration: none;
+    outline: none;
+    text-overflow: none;
+    font-size: 58px;
+    animation: infinite;
+    transition: 0.5s ;
+    color: #294292;
+    
+    
+    
+}
+.btna{
+    text-decoration: none;
+    outline: none;
+    text-overflow: none;
+}
+.btna:hover{
+    text-decoration: none;
+    outline: none;
+    text-overflow: none;
+}
+.footer{
+    background-color:#294292 ;
+    color: white;
+    padding: 15px;
+}
+.titulo{
+    font-size: 25px;
+    text-shadow: 2px 2px 2px black;
+}
+.nomes{
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+#btnAvancar{
+    font-size: 80px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+    margin: auto;
+    height: auto;
+    width: auto;
+
+}
+#btnAvancar:hover{
+    font-size: 96px;
+    color: #294292;
+    
+}
+#moreContent{
+    display: none;
+    width: 90%;
+}
+.mapbutton{
+    color: black;
+    font-size:100px;
+    margin: auto;
+    margin-top: 50px;
+    text-decoration: none;
+    display: none;
+}
+.mapshare{
+    text-decoration: none;
+    color: black;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: none;
+}
+.mapshare:hover{
+     text-decoration: none;
+    outline: none;
+    text-overflow: none;
+    font-size: 58px;
+    animation: infinite;
+    transition: 0.5s ;
+    color: #294292;
+}
+.resultbox{
+      position: absolute;
+    top: 290px; /* ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 21%;
+    z-index: 999; /* para ficar acima de outros elementos, se necessário */
+   background-color:#f6f6f6;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.);
+   display: none;
+}
+.resultbox ul{
+    --1padding: 15px 10px;
+    padding: var(--1padding);
+
+}
+.resultbox ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: var(--1padding);
+    cursor: pointer;
+    border: 2px solid;
+    padding: 13px;
+    gap: 20px;
+    border-radius: 20px;
+    transition: all 0.38s;
+    font-size: 18px;
+    font-family: 'Comfortaa';
+
+}
+.resultbox ul li:hover{
+    background-color: white;
+    border: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: #294292;
+    font-size: 19px;
+    
+}
+/* Media queries */
+ @media (min-width: 1150px)/* Quando tiver um altura minima de 1150px  */
+ {
+ .place/* Div onde está o lugar todo*/
+ {  
+  width: 90%; 
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+ }
+.grid-container /*Uma div separada pro grid*/
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas iguais */
+  gap: 20px; /* espaço entre os blocos */
+  justify-items: center;
+  margin-top: 30px;
+}
+}
+@media (max-width: 1150px) {
+    .title{
+        font-weight: bold;
+        color: white;
+        margin: auto;
+        font-size: 45px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 18px;
+    }
+   .text{
+    cursor: default;
+    font-size: 18px;
+    font-family: 'Lexend Deca';
+    font-weight: 350;
+}
+    .place{
+        margin: auto;
+        margin-top: 30px;
+        color: black;
+        height: auto;
+        width: 80%;
+    }
+    .img:active{
+        transform: scale(1.8);
+    }
+    .resultbox{
+        width: 28%;
+    }
+}
+@media (max-width: 800px) {
+    .text{
+        cursor: default;
+        font-size: 18px;
+        font-family: 'Lexend Deca';
+        font-weight: 350;
+    }
+    .title{
+        font-weight: bold;
+        color: white;
+        margin: auto;
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 18px;
+    }
+     .Bandeira{
+        width: 80px;
+        height: 50px;
+        display: flex;
+    }
+    #map{
+        display: none;
+    }
+     .mapbutton{
+        display: block;
+    }
+    .mapshare{
+        display:block;
+    }
+     .resultbox{
+        width: 40%;
+    }
+}
+@media (max-width: 500px) {
+    .title{
+        font-weight: bold;
+        color: white;
+        margin: auto;
+        font-size: 25px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 18px;
+    }
+    .subtitle{
+        display: none;
+    }
+     .Bandeira{
+        width: 50px;
+        height: 40px;
+        display: flex;
+    }
+    .title{
+        margin: auto;
+        margin-top: 25%;
+    }
+    .mapbutton{
+        display: block;
+    }
+    .mapshare{
+        display:block;
+    }
+      .resultbox{
+        width: 80%;
+    }
+}
