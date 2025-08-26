@@ -388,4 +388,22 @@ main{
         width: 80%;
     }
 }
+@media (max-width: 380px) {
+    .search{
+        width: 70%;
+    }
+    header{
+        width: 380px;
+    }
+}
+@media (max-width: 360px) {
+    .search{
+        width: 60%;
+    }
+    header{
+        width: 360px;
+    }
+}
+
+
 
